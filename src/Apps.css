@@ -1,0 +1,142 @@
+
+.login{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 50px;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 16px 0;
+}
+
+.nav{
+  position: relative;
+}
+
+.nav ul{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 24px;
+}
+
+.nav .search{
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  display:flex;
+  align-items: center;
+  gap: 0 4px;
+}
+
+.contents_1{
+  width: 100%;
+  max-width: 1600px;
+ 
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 100px auto;
+
+ 
+}
+
+.contents_1 .box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+
+
+.contents_1 .box ul{
+  display: flex;
+  gap: 20px;
+}
+
+.login p {
+  cursor: pointer;
+}
+
+.login div{
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  gap: 0 8px;
+}
+
+.loginform{
+  width: 100%;
+  max-width: 700px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  border: 1px solid #000;
+}
+
+.loginform .idpw{
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.loginform .idpw .id{
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.loginform .idpw .pw{
+  width: 100%;
+  display: flex;
+}
+
+
+
+.loginform .idpw label{
+  display: block;
+  width: 100px;
+  margin-left: 20px;
+}
+
+.loginform .idpw button{
+  width: 200px;
+  margin-top: 20px;
+}
+
+
+
+
+
+.loginform .idpw input{
+width: 70%;
+height: 30px;
+}
+
+@media screen and (max-width:1200px) {
+  .contents_1{
+   
+    grid-template-columns: repeat(3, 1fr);
+   
+  }
+}
+
+@media screen and (max-width:767px) {
+  .contents_1{
+   
+    grid-template-columns: repeat(2, 1fr);
+   
+  }
+}
