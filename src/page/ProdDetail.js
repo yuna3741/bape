@@ -10,7 +10,7 @@ function ProdDetail() {
 
   const data = async()=>{
     try{
-   const response = await axios.get(`http://localhost:5000/products/${id}`)
+   const response = await axios.get(` https://my-json-server.typicode.com/yuna3741/bape/products/${id}`)
    setProduct(response.data)
     }catch(error){
       console.log("에러")

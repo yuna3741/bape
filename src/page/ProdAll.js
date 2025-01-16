@@ -17,7 +17,7 @@ function ProdAll() {
     const searchQuery = query.get('q') || ""; // url 검색어 가져오기
     console.log(searchQuery)
     try{
-      const response = await axios.get(`http://localhost:5000/products?q=${searchQuery}`)
+      const response = await axios.get(`https://my-json-server.typicode.com/yuna3741/bape/products?q=${searchQuery}`)
       const filterData = response.data.filter(item=> item.title.includes(searchQuery))
       // title 필드에 검색어 포함여부 확인
       setProductlist(filterData)
